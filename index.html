@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+ <nav>
+    <div class="nav-container">
+        <div class="logo">
+            Riyane <span> Nouni</span>
+        </div>   
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i> <!-- Hamburger icon -->
+    </div>
+    <!-- <div class="links">
+        <a href="#">Acceuil</a>
+        <a href="#">Moi</a>
+        <a href="#">Compétence</a>
+        <a href="#">Contact</a>
+    </div> à rajouter lors du responsive -->
+    <div class="dropdown">
+        <div class="links">
+            <a href="#">Acceuil</a>
+            <a href="#">Moi</a>
+            <a href="#">Compétence</a>
+            <a href="#">Contact</a>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+    </div>
+ </nav>
+
+ <section>
+    <div class="main-container">
+        <div class="image">
+            <img src="rayou.webp" alt="rayane">
+        </div>
+        <div class="content">
+            <h1>Bonjour, je suis <span>Riyane</span></h1>
+            <div class="typewriter">Je suis un <span class="typewriter-text"></span></div>
+            <p> Actuellement en premiere année en BTS SIO option SLAM à L'IPSSI de saint quentin, je suis à la recherche d'une alternance en tant que developpeur fullstack !</p>
+            <div class="social-links">
+                <a href="https://github.com/Mokaioshin"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/riyane-nouni-539916339/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <button class="button">Contactez-moi</button>
+
+        </div>
+    </div>
+ </section>
+
+ <script src="script.js"></script> 
+</body>
+</html>
