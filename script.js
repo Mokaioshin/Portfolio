@@ -1,43 +1,74 @@
-function hamburg() {
-    const navbar = document.querySelector(".dropdown");
-    navbar.classList.add("show"); // Affiche le menu déroulant
-}
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            document.getElementById('mobileMenu').classList.add('show');
+        }
 
-function cancel() {
-    const navbar = document.querySelector(".dropdown");
-    navbar.classList.remove("show"); // Cache le menu déroulant
-}
+        function closeMenu() {
+            document.getElementById('mobileMenu').classList.remove('show');
+        }
 
-const texts = [
-    "ETUDIANT,", 
-    "DEVELOPPEUR,"
-];
+        // Smooth Scroll to Contact Section
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
 
-let speed = 100;
-const textElements = document.querySelector(".typewriter-text");
+        // Typewriter Effect
+        const texts = ["Développeur Web", "Étudiant en BTS SIO", "Passionné d'Informatique"];
+        let count = 0;
+        let index = 0;
+        let currentText = '';
+        let letter = '';
+        let isDeleting = false;
 
-let textIndex = 0;
-let characterIndex = 0;
+        function type() {
+            const typewriterElement = document.querySelector('.typewriter-text');
+            currentText = texts[count];
+            
+            if (isDeleting) {
+                letter = currentText.substring(0, index--);
+            } else {
+                letter = currentText.substring(0, ++index);
+            }
+            
+            typewriterElement.textContent = letter;
+            
+            let typeSpeed = 150;
+            
+            if (isDeleting) {
+                typeSpeed /= 2;
+            }
+            
+            if (!isDeleting && index === currentText.length) {
+                typeSpeed = 2000;
+                isDeleting = true;
+            } else if (isDeleting && index === 0) {
+                isDeleting = false;
+                count = (count + 1) % texts.length;
+                typeSpeed = 500; 
+            }
+            
+            setTimeout(type, typeSpeed);
+        }
 
-function type() {
-    if (characterIndex < texts[textIndex].length) {
-        textElements.innerHTML += texts[textIndex].charAt(characterIndex);
-        characterIndex++;
-        setTimeout(type, speed);
-    } else {
-        setTimeout(eraseText, 1000);
-    }
-}
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Votre message a été envoyé avec succès !');
+            this.reset();
+        });
 
-function eraseText() {
-    if (textElements.innerHTML.length > 0) {
-        textElements.innerHTML = textElements.innerHTML.slice(0, -1);
-        setTimeout(eraseText, 50);
-    } else {
-        textIndex = (textIndex + 1) % texts.length;
-        characterIndex = 0;
-        setTimeout(type, 500);
-    }
-}
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            type();
+        });
 
-window.onload = type;
+       
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
