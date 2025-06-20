@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Riyane Nouni</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!--les svg toute pipou -->
+    <link rel="stylesheet" href="index.css">
+
+
+    
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                Riyane <span>Nouni</span>
+            </div>
+            <div class="links">
+                <a href="#home">Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+        </div>
+        <div class="dropdown" id="mobileMenu">
+            <div class="links">
+                <a href="#home" onclick="closeMenu()">Accueil</a>
+                <a href="#about" onclick="closeMenu()">À propos</a>
+                <a href="#projects" onclick="closeMenu()">Projets</a>
+                <a href="#contact" onclick="closeMenu()">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="closeMenu()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="main-container">
+            <div class="image">
+                <img src="rayou.webp" alt="Riyane Nouni">
+            </div>
+            <div class="content">
+                <h1>Bonjour, je suis <span>Riyane</span></h1>
+                <div class="typewriter">Je suis un <span class="typewriter-text"></span></div>
+                <p>Actuellement en première année en BTS SIO option SLAM à L'IPSSI de Saint-Quentin, je suis à la recherche d'une alternance en tant que développeur fullstack. Passionné par le développement web et les nouvelles technologies, je cherche à approfondir mes compétences dans le millieu professionnel.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Mokaioshin" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/riyane-nouni-539916339/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <button class="button" onclick="scrollToContact()">Contactez-moi</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <h2 class="section-title">À <span>propos</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Qui suis-je ?</h3>
+                    <p>Je m'appelle Riyane Nouni, étudiant en BTS SIO SLAM passionné par le développement web. Mon objectif est de devenir un développeur fullstack complet en maîtrisant les technologies front-end et back-end modernes.</p>
+                    <p>Je suis curieux, rigoureux et toujours prêt à relever de nouveaux défis. Ma formation m'a permis d'acquérir de solides bases en programmation et je souhaite maintenant mettre en pratique ces connaissances au sein d'une entreprise dynamique.</p>
+                    <p> Je suis aussi un grand fan de musique, de jeu vidéo et de voyage !</p>
+                    <h1> Présentation de mon parcours !</h1>
+        
+  </div>
+<div class="timeline">
+        <div class="event left">
+            <h3>Obtention du bac STI2D</h3>
+            <p>année 2020-2021 : La STI2D permet d’acquérir des compétences technologiques étendues, transversales à tous les domaines industriels, ainsi que des compétences approfondies dans un champ de spécialité. .</p>
+        </div>
+        <div class="event right">
+            <h3> Animateur en Ehpad</h3>
+            <p>Fevrier-Aout 2022 :Initiation à l'Informatique aux personnes agées.</p>
+        </div>
+        <div class="event left">
+            <h3> BTS Electrotechnique </h3>
+            <p>Septembre 2022-Juin 2023 :Forme à l'étude, à la conception, à la mise en œuvre, à l'utilisation, à l'optimisation et à la maintenance d'installations électriques "intelligentes", qui intègrent les technologies numériques, communicantes et les objets connectés au service des enjeux énergétiques..</p>
+    </div>
+    <div class="event right">
+            <h3>Taxi/Lotti</h3>
+            <p>Fevrier-Juillet 2025 : Transport de personnes vulnérables (CHU, IME, SESSAD) en assurant sécurité et ponctualité.
+.</p>
+        </div>
+        <div class="event left">
+            <h3> BTS SIO </h3>
+            <p>Octobre 2022 -Juin 2025 : Le BTS services informatiques aux organisations apprend à exploiter des données, dispense les bases de la programmation et du développement d’applications, et apporte des enseignements sur le fonctionnement d’une entreprise. .</p>
+    </div>
+</div>
+c
+<section class="formation-section">
+  <div class="formation">
+    <div class="bloc">
+        <h1>Ma formation à <span>L'IPSSI</span> de Saint Quentin en Yvelines !</h1>
+                <p> Il y'a 2 choix dans le programme de ma formation:</p>
+            <br>
+                <p>SISR, Solutions d’infrastructures, système et réseaux vous permet d’acquérir les compétences en administration et sécurisation des réseaux ou Cybersécurité. Vous saurez :  installer, configurer, maintenir, administrer et sécuriser des réseaux informatiques.</p>
+             <br>
+        <h1> ET</h1>
+                <p>SLAM, solutions logicielles et applications métier, vous permet de devenir développeur. Vous saurez : développer dans plusieurs langages et gérer des applications web, mobile ou software.</p>
+            <br>
+        <h1> Sans oublier !</h1>
+                <p> Des cours de maths, d'anglais, de culture économique juridique et managerial, de culture général et expression.</p>
+    </div>
+  </div>
+</section>
+
+
+</div>
+            
+            <div class="skills">
+                <div class="skill-category">
+                    <h3>Compétences Techniques</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">HTML5</div>
+                        <div class="skill-item">CSS3</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">PHP</div>
+                        <div class="skill-item">SQL</div>
+                        <div class="skill-item">React</div>
+                        <div class="skill-item">Github</div>
+                        <div class="skill-item">C++</div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Autres Compétences</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">Travail d'équipe</div>
+                        <div class="skill-item">Gestion de projet</div>
+                        <div class="skill-item">Résolution de problèmes</div>
+                        <div class="skill-item">Anglais technique</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="projects-container">
+            <h2 class="section-title">Mes <span>Projets</span></h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="rayou.webp" alt="Projet 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Personnel</h3>
+                        <p>Site web portfolio responsive pour présenter mes compétences, mes projets, mes expériences pro.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fa-solid fa-link"></i> Voir le site</a>
+                            <a href="#"><i class="fa-brands fa-github"></i> Code source</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="/api/placeholder/300/200" alt="Projet 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Application Web en JS et Réact</h3>
+                        <p>Application de gestion de tâches développée avec React et JavaScripts.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fa-solid fa-link"></i> Voir le projet</a>
+                            <a href="#"><i class="fa-brands fa-github"></i> Code source</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="/api/placeholder/300/200" alt="Projet 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Site E-commerce</h3>
+                        <p>Site de vente en ligne avec système de panier et de paiement.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">PHP</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">HTML/CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fa-solid fa-link"></i> Voir le site</a>
+                            <a href="#"><i class="fa-brands fa-github"></i> Code source</a>
+                        </div>
+                    </dv>
+                </div>
+            </div>
+            <div class="project-card">
+ <div class="project-img">
+                        <img src="veille.png" alt="Projet 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Veille Techno</h3>
+                        <p>Etude sur L'IA dans le jeu vidéo.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Canva</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fa-solid fa-link"></i> Voir le diapo</a>
+                        </div>
+                    </dv>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Mes expériences professionnel">
+        <div class="pro-container">
+             <h2 class="section-title">Mes expériences<span> professionnel </span></h2>
+                <div class="pro-card">
+                    <div class="pro-img">
+                        <img src="logo-si4you.png" alt="expériences pro 1">
+                    </div>
+                    <div class="pro-info">
+                        <h3>SI4YOU</h3>
+                        <p>Stage de 2 mois en entreprise chez <span> SI4YOU</span></p>
+                        <div class="pro-tags">
+                            <span class="pro-tag">HTML</span>
+                            <span class="pro-tag">CSS</span>
+                            <span class="pro-tag">JavaScript</span>
+                        </div>
+                        <div class="pro-links">
+                            <a href="#"><i class="fa-solid fa-link"></i> Voir le site</a>
+                            <a href="#"><i class="fa-brands fa-github"></i> Code source</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <h2 class="section-title">Me <span>Contacter</span></h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Riyane Nouni - Tous droits réservés</p>
+        <div class="social-links">
+            <a href="https://github.com/Mokaioshin" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/riyane-nouni-539916339/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+
+    <!-- à regler plus tard seule façon de fonctionner. -->
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            document.getElementById('mobileMenu').classList.add('show');
+        }
+
+        function closeMenu() {
+            document.getElementById('mobileMenu').classList.remove('show');
+        }
+
+        // Smooth Scroll to Contact Section
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Typewriter Effect
+        const texts = ["Développeur Web", "Étudiant en BTS SIO", "Passionné d'Informatique"];
+        let count = 0;
+        let index = 0;
+        let currentText = '';
+        let letter = '';
+        let isDeleting = false;
+
+        function type() {
+            const typewriterElement = document.querySelector('.typewriter-text');
+            currentText = texts[count];
+            
+            if (isDeleting) {
+                letter = currentText.substring(0, index--);
+            } else {
+                letter = currentText.substring(0, ++index);
+            }
+            
+            typewriterElement.textContent = letter;
+            
+            let typeSpeed = 150;
+            
+            if (isDeleting) {
+                typeSpeed /= 2;
+            }
+            
+            if (!isDeleting && index === currentText.length) {
+                typeSpeed = 2000; // Pause at end
+                isDeleting = true;
+            } else if (isDeleting && index === 0) {
+                isDeleting = false;
+                count = (count + 1) % texts.length;
+                typeSpeed = 500; // Pause before typing next
+            }
+            
+            setTimeout(type, typeSpeed);
+        }
+
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Votre message a été envoyé avec succès !');
+            this.reset();
+        });
+
+        // Start typewriter effect when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            type();
+        });
+
+        // Handle navigation links for smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
