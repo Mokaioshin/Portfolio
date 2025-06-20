@@ -71,5 +71,9 @@
                     behavior: 'smooth'
                 });
             });
+<<<<<<< HEAD
         });
 
+=======
+        });
+>>>>>>> 6a76f5ba880fdddd16be2a6d7122235aa8c687c8
