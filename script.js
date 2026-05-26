@@ -15,7 +15,7 @@
         }
 
         // Typewriter Effect
-        const texts = ["Développeur Web", "Étudiant en BTS SIO", "Passionné d'Informatique"];
+        const texts = ["Apprenti Développeur Fullstack", "Étudiant en BTS SIO", "Passionné d'Informatique"];
         let count = 0;
         let index = 0;
         let currentText = '';
